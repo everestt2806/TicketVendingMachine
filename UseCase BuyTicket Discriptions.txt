@@ -1,0 +1,36 @@
+Use Case: Buy Ticket
+
+Actors: Customer, Credit Card Company, Digital Wallet
+
+Description: This use case allows a customer to buy a ticket from a ticket vendor machine.
+
+Preconditions:
+- The ticket vendor machine is turned on and connected to the internet.
+- The customer has a valid credit card or digital wallet account with sufficient funds.
+
+Basic Flow:
+1. The customer approaches the ticket vendor machine.
+2. The system displays a welcome message and prompts the customer to select a language.
+3. The customer selects a language.
+4. The system displays a menu of transportation options.
+5. The customer selects a transportation option.
+6. The system displays a menu of destination options.
+7. The customer selects a destination.
+8. The system displays a menu of payment options.
+9. The customer selects a payment option.
+10. If the customer selects "Credit Card", the system prompts the customer to insert their credit card.
+11. The customer inserts their credit card.
+12. The system validates the credit card and charges the customer's account.
+13. The system prints a paper ticket with a bar code.
+14. If the customer selects "Digital Wallet", the system displays a QR code.
+15. The customer scans the QR code using their mobile phone and confirms the payment.
+16. The system issues a digital ticket with a QR code.
+
+Alternate Flows:
+10a. If the customer's credit card is invalid, the system displays an error message and prompts the customer to try again or to select a different payment option.
+12a. If the credit card transaction is declined, the system displays an error message and prompts the customer to try again or to select a different payment option.
+15a. If the digital wallet payment is not confirmed, the system displays an error message and prompts the customer to try again or to select a different payment option.
+
+Postconditions:
+- The customer receives a valid ticket for their selected transportation option and destination.
+- The customer's credit card or digital wallet account is charged for the ticket purchase.
